@@ -42,8 +42,11 @@
 
     echo "<br><br>";
     echo "Ejercicio 6<br>";
-    $sumaMatrices = new Calculadora;
-    echo $sumaMatrices->sumaMatrices([[2, 1], [1, 2]], [[1, 2], [2, 1]])
+    $sumaMatrices = new Calculadora;       
+    $sumaMatrices->sumaMatrices([[2, 1], [1, 2]], [[1, 2], [2, 1]]);
+ 
+    
     ?>
+    
 </body>
 </html>

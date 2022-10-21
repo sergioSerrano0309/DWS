@@ -85,17 +85,17 @@ class Calculadora{
     public function sumaMatrices($primera_matriz, $segunda_matriz)
     {   
         $resultado = array();
+
         for($x = 0; $x >= count($primera_matriz) ; $x++)
         {
-            $resultado[] = array();
-
             for($y = 0; $y >= count($primera_matriz[$x]); $y++){
 
-                $resultado[$x][] = $primera_matriz[$x][$y] + $segunda_matriz[$x][$y];
-
-            }
-        }
-        return $resultado;
+                $resultado[$x][$y] = $primera_matriz[$x][$y] + $segunda_matriz[$x][$y];
+                
+            }                 
+        }   
+        
+        var_dump($resultado);
     }
 }
 
